@@ -1,0 +1,116 @@
+Binary Search Tree (BST) oluşturmak için verilen diziyi sırayla elemanları eklememiz gerekiyor. BST'de her düğüm, solunda kendi değerinden daha küçük ve sağında kendi değerinden daha büyük olan düğümlere sahiptir. Aşamalar şu şekildedir:
+
+Verilen dizi: [7, 5, 1, 8, 3, 6, 0, 9, 4, 2]
+
+Aşama 1: 7, kök düğüm olarak atanır.
+
+markdown
+Copy code
+    7
+Aşama 2: 5, 7'nin solunda olduğu için 7'nin sol çocuğu olarak atanır.
+
+markdown
+Copy code
+    7
+   /
+  5
+Aşama 3: 1, 7'den daha küçük olduğu için 7'nin solunda yer alır.
+
+markdown
+Copy code
+    7
+   /
+  5
+ /
+1
+Aşama 4: 8, 7'den daha büyük olduğu için 7'nin sağına yerleştirilir.
+
+markdown
+Copy code
+    7
+   / \
+  5   8
+ /    
+1
+Aşama 5: 3, 5'ten daha küçük olduğu için 5'in solunda yer alır.
+
+markdown
+Copy code
+    7
+   / \
+  5   8
+ / \
+1   3
+Aşama 6: 6, 5'ten daha büyük olduğu için 5'in sağına yerleştirilir.
+
+markdown
+Copy code
+    7
+   / \
+  5   8
+ / \ 
+1   3
+     \
+      6
+Aşama 7: 0, 7'den daha küçük olduğu için 7'nin solunda yer alır.
+
+markdown
+Copy code
+    7
+   / \
+  5   8
+ / \ 
+1   3
+ /   \
+0     6
+Aşama 8: 9, 7'den daha büyük olduğu için 7'nin sağına yerleştirilir.
+
+markdown
+Copy code
+    7
+   / \
+  5   8
+ / \   \
+1   3   9
+ /   \
+0     6
+Aşama 9: 4, 5'ten daha büyük olduğu için 5'in sağına yerleştirilir.
+
+markdown
+Copy code
+    7
+   / \
+  5   8
+ / \   \
+1   3   9
+ / \   
+0   4     
+     \
+      6
+Aşama 10: 2, 3'ten daha küçük olduğu için 3'ün solunda yer alır.
+
+markdown
+Copy code
+    7
+   / \
+  5   8
+ / \   \
+1   3   9
+ / \   
+0   4     
+   / \
+  2   6
+Sonuç olarak, verilen dizi ile oluşturulan Binary Search Tree aşağıdaki gibidir. Her adımda, yeni bir eleman ağaca eklenmiştir ve BST kuralı korunmuştur.
+
+markdown
+Copy code
+    7
+   / \
+  5   8
+ / \   \
+1   3   9
+ / \   
+0   4     
+   / \
+  2   6
+Not: BST'lerde düğümlerin yerleştirilmesi, birkaç farklı şekilde yapılabilir, ancak yukarıdaki aşamalar verilen diziyi BST'ye eklerken sıralı bir ekleme yöntemi olarak gösterilmiştir. BST'lerde yerleştirme sırasının farklı olması durumunda sonuç ağaç da farklı olacaktır.
